@@ -1,6 +1,6 @@
 "use client";
 
-// import Image from "next/image"; // substituído por Logo com fallback
+import Image from "next/image"; // header usa logo anterior
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import {
@@ -58,7 +58,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-100">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-6">
           <div className="flex items-center gap-2">
-            <Logo alt={`Logo ${preparedFor}`} width={120} height={40} />
+            <Image src="/branding/cmremedios-logo.png" alt={`Logo ${preparedFor}`} width={120} height={40} />
           </div>
           <nav className="ml-auto hidden md:flex items-center gap-6 text-sm">
             <a className="hover:text-prime" href="#desafio">Desafio</a>
