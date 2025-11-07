@@ -115,7 +115,7 @@ export default function Home() {
             <div className="card">
               <h3 className="text-xl font-semibold text-prime">Agendas desconectadas</h3>
               <ul className="mt-3 space-y-1 text-slate-700">
-                <li>• Hospital IOP (Tasy) vs agenda particular</li>
+                <li>• Agendas da clínica (sistemas internos) vs agenda particular</li>
                 <li>• Conflitos e sobreposições</li>
                 <li>• Dificuldade de encaixes e remarcações</li>
               </ul>
@@ -148,7 +148,7 @@ export default function Home() {
 
           <div className="mt-8">
             <div className="card">
-              <div className="font-bold text-prime">4 soluções para o consultório do {preparedFor}</div>
+              <div className="font-bold text-prime">4 soluções para a clínica {preparedFor}</div>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">
               <div className="card">
@@ -162,8 +162,8 @@ export default function Home() {
               <div className="card">
                 <div className="font-semibold text-prime flex items-center gap-2"><MessageSquare className="h-5 w-5"/> FAQ Inteligente (Educacional)</div>
                 <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Procedimentos, recuperação e valores/convênios</li>
-                  <li>• Sobre o médico, localização e horários</li>
+                  <li>• Procedimentos, exames, recuperação e valores/convênios</li>
+                  <li>• Sobre a clínica e corpo clínico, localização e horários</li>
                   <li>• Convida a agendar ao final (conversão)</li>
                 </ul>
               </div>
@@ -178,7 +178,7 @@ export default function Home() {
               <div className="card">
                 <div className="font-semibold text-prime flex items-center gap-2"><Stethoscope className="h-5 w-5"/> CRM + Agenda Unificada + Dashboard</div>
                 <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Unifica Hospital IOP (Tasy) + particular</li>
+                  <li>• Unifica agendas da clínica (sistemas internos) + particular</li>
                   <li>• Funis, tags e histórico completo no CRM</li>
                   <li>• KPIs, funil e relatórios executivos</li>
                 </ul>
@@ -274,7 +274,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className="mt-4 text-base text-slate-600">As estimativas podem ser alteradas de acordo com a complexidades dos fluxos demandados pelo cliente</div>
+      <div className="mt-4 text-base text-slate-600">Valores e prazos são estimativas e podem variar conforme escopo, integrações e complexidade dos fluxos.</div>
         </div>
       </section>
 
@@ -291,7 +291,7 @@ export default function Home() {
               <div className="text-slate-700 space-y-2 mb-4">
                 <div>🕘 Atendimento 24/7 no WhatsApp — sem perda de leads fora do horário</div>
                 <div>🤖 Qualificação e FAQ automatizados — recepção foca no que importa</div>
-                <div>📅 Agenda unificada (IOP Tasy + particular) — menos conflitos e encaixes rápidos</div>
+                <div>📅 Agenda unificada (sistemas da clínica + particular) — menos conflitos e encaixes rápidos</div>
                 <div>🔔 Confirmações e reagendamentos automáticos — redução de faltas e ocupação melhor</div>
                 <div>🔄 Follow‑up estruturado — retornos/exames e acompanhamento pós‑procedimento</div>
               </div>
@@ -454,6 +454,7 @@ export default function Home() {
               <div className="mt-6 h-px bg-slate-200" />
             </div>
           </div>
+          <div className="mt-4 text-slate-600 text-xs">Valores ilustrativos para referência. Ajustar conforme dados reais, escopo acordado e necessidades da {preparedFor}.</div>
         </div>
       </section>
 
@@ -1115,7 +1116,7 @@ function PhaseDetailModalContent({ phase }: { phase: 1 | 2 | 3 | 4 }) {
       title: "Fase 2: Desenvolvimento dos Agentes",
       items: [
         { title: "Agente Orquestrador + SDR", description: "Qualificação automatizada (particular/convênio), validação de convênios e proposta de horários." },
-        { title: "Agente FAQ Educacional", description: "Base de conhecimento (procedimentos, recuperação, valores/convênios, sobre o médico, localização)." },
+        { title: "Agente FAQ Educacional", description: "Base de conhecimento (procedimentos, exames, recuperação, valores/convênios, sobre a clínica e corpo clínico, localização)." },
         { title: "Agente Anti No‑Show", description: "Confirmações D‑2/D‑1/D‑2h, reagendamento e fila de espera." },
         { title: "Teste Guiado (Human‑in‑the‑loop)", description: "Validação ponta a ponta com escala para humano quando necessário." }
       ]
@@ -1123,7 +1124,7 @@ function PhaseDetailModalContent({ phase }: { phase: 1 | 2 | 3 | 4 }) {
     3: {
       title: "Fase 3: Integrações e Painéis",
       items: [
-        { title: "Agenda Unificada", description: "Integração Hospital IOP (Tasy) + agenda particular; prevenção de conflitos e sobreposições." },
+        { title: "Agenda Unificada", description: "Integração das agendas da clínica (sistemas internos) + agenda particular; prevenção de conflitos e sobreposições." },
         { title: "CRM Comercial", description: "Funis, estágios, tags por especialidade/origem e histórico completo de conversas." },
         { title: "Dashboard Executivo", description: "KPIs, funil completo, previsões de no‑show e relatórios executivos." },
         { title: "Relatórios", description: "Mês atual, pipeline, crescimento vs mês anterior." }
@@ -1171,7 +1172,7 @@ function ConquistasModalContent() {
           </div>
           <div className="bg-white p-4 rounded-lg">
             <div className="font-bold text-emerald-700 mb-2">📅 Agenda Unificada</div>
-            <div className="text-sm text-slate-700">IOP (Tasy) + particular — menos conflitos e sobreposições</div>
+            <div className="text-sm text-slate-700">Sistemas internos da clínica + particular — menos conflitos e sobreposições</div>
           </div>
           <div className="bg-white p-4 rounded-lg">
             <div className="font-bold text-emerald-700 mb-2">🔔 Confirmações e Reagendamentos</div>

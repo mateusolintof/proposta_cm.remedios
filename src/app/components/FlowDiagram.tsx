@@ -30,7 +30,7 @@ function nodesAndEdges(kind: FlowKind): { nodes: Node[]; edges: Edge[] } {
         { id: "plano", position: { x: 1040, y: 80 }, data: { label: "Plano de Saúde" }, className: "flow-node", ...common },
         { id: "particular", position: { x: 1040, y: 220 }, data: { label: "Particular" }, className: "flow-node", ...common },
         { id: "qualif", position: { x: 1300, y: 150 }, data: { label: "Qualificação" }, className: "flow-node", ...common },
-        { id: "disp", position: { x: 1560, y: 150 }, data: { label: "Agenda Unificada (Tasy + Particular)" }, className: "flow-node", ...common },
+        { id: "disp", position: { x: 1560, y: 150 }, data: { label: "Agenda Unificada (sistemas da clínica + particular)" }, className: "flow-node", ...common },
         { id: "agend", position: { x: 1820, y: 150 }, data: { label: "Agendamento + Registro no CRM" }, type: "output", className: "flow-node flow-node--output", ...common },
         { id: "hitl", position: { x: 1820, y: 60 }, data: { label: "Aciona humano para confirmar" }, type: "output", className: "flow-node flow-node--output", ...common },
       ];
@@ -82,7 +82,7 @@ function nodesAndEdges(kind: FlowKind): { nodes: Node[]; edges: Edge[] } {
         { id: "proced", position: { x: 660, y: 20 }, data: { label: "Procedimentos" }, className: "flow-node", ...common },
         { id: "recuperacao", position: { x: 660, y: 80 }, data: { label: "Recuperação" }, className: "flow-node", ...common },
         { id: "valores", position: { x: 660, y: 140 }, data: { label: "Valores / Convênios" }, className: "flow-node", ...common },
-        { id: "sobre", position: { x: 660, y: 200 }, data: { label: "Sobre o Médico" }, className: "flow-node", ...common },
+        { id: "sobre", position: { x: 660, y: 200 }, data: { label: "Sobre a Clínica e Corpo Clínico" }, className: "flow-node", ...common },
         { id: "local", position: { x: 660, y: 260 }, data: { label: "Localização e Horários" }, className: "flow-node", ...common },
         { id: "escalonamento", position: { x: 900, y: 100 }, data: { label: "Escala p/ humano se necessário" }, type: "output", className: "flow-node flow-node--output", ...common },
       ];

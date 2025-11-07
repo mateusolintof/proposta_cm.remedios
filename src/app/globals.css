@@ -60,6 +60,24 @@ body {
   @apply uppercase tracking-widest text-lg md:text-xl font-extrabold text-prime;
 }
 
+/* Acessibilidade: foco visível */
+.btn-primary:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--prime-accent);
+  outline-offset: 2px;
+}
+
+/* Respeitar prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* React Flow — estilos de nós temáticos (cores do tema) */
 .flow-node {
   border: 1.5px solid color-mix(in oklab, var(--color-prime) 40%, white);

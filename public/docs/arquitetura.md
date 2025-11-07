@@ -17,7 +17,7 @@ O Cenário
 | # | Gargalo | Impacto no Negócio |
 |---|---------|-------------------|
 | **1** | **Alto volume sem qualificação** | Atendentes perdem tempo com leads não elegíveis |
-| **2** | **Agendas desconectadas** | Conflitos entre agenda Hospital IOP (Tasy) e particular |
+| **2** | **Agendas desconectadas** | Conflitos entre agendas da clínica (sistemas internos) e agenda particular |
 | **3** | **Zero visibilidade comercial** | Impossível saber: taxa de qualificacao, taxa de conversão, gargalos |
 | **4** | **Perda de leads por tempo de resposta** | Leads que chegam fora do horário comercial são perdidos |
 | **5** | **Falta de follow-up estruturado** | Leads qualificados esfriam sem acompanhamento |
@@ -106,7 +106,7 @@ Agente especialista que responde dúvidas sobre procedimentos, tratamentos e inf
    └─ Formação, especialização, experiência
    
 📍 Localização e Horários
-   └─ Hospital IOP - Como chegar
+   └─ Unidades da clínica - Como chegar
 ```
 
 ---
@@ -163,7 +163,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
    └─ Tags personalizadas
    
 📅 Agenda Unificada
-   └─ Hospital IOP (Tasy) + Particular
+   └─ Agendas da clínica (sistemas internos) + Particular
    └─ Evita conflitos e sobreposição
    └─ Código de cores
    
@@ -235,7 +235,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
 ┌──────────────────────────────────────────┐
 │    📅 CONSULTA AGENDA UNIFICADA         │
 │                                          │
-│  [Tasy Hospital IOP] + [Agenda Particular]│
+│  [Sistemas internos da clínica] + [Agenda Particular]│
 │                                          │
 │  Horários livres identificados:          │
 │  ⚪ Segunda 14h                          │
@@ -267,7 +267,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
 │                                          │
 │  "✅ Consulta confirmada!                │
 │   Data: [X] às [Y]                       │
-│   Local: Hospital IOP                    │
+│   Local: Unidade CM Remédios             │
 │   Documentos: RG, CPF, Carteirinha"      │
 └──────────────────────────────────────────┘
 ```
@@ -387,7 +387,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
 │   📱 LEMBRETE FINAL                             │
 │                                                 │
 │   "Lembrete: Consulta amanhã às [Y]!           │
-│    📍 Hospital IOP                              │
+│    📍 Unidade CM Remédios                       │
 │    📄 Leve: RG, CPF, Carteirinha"              │
 └─────────────────┬───────────────────────────────┘
                   │

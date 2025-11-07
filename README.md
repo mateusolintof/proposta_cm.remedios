@@ -18,13 +18,13 @@ Como rodar (porta 3001)
 Estrutura (onde customizado)
 - `src/app/page.tsx` — hero, seções e modais. `preparedFor = "CM Remédios"` e data já setados.
 - `src/app/components/Modal.tsx` — modal animado (`size="full" | "md"`).
-- `src/app/components/FlowDiagram.tsx` — fluxos dos agentes com “Agenda Unificada (Tasy + Particular)”.
+- `src/app/components/FlowDiagram.tsx` — fluxos dos agentes com “Agenda Unificada (sistemas da clínica + particular)”.
 - `src/app/globals.css` — tokens de tema adaptados ao cliente (`#235aa0`, `#f1c309`, `#203158`).
 - `public/branding/cmremedios-logo.png` — logo oficial capturado do site.
 
 Seções (resumo)
 - Hero → “Agentes de IA para Atendimento Comercial”.
-- Desafio Atual → do doc (volume ~150/dia, agendas desconectadas Tasy+particular, zero visibilidade, follow‑up).
+- Desafio Atual → do doc (volume ~150/dia, agendas desconectadas (sistemas da clínica + particular), zero visibilidade, follow‑up).
 - Nossas Soluções → SDR Qualificador, FAQ, Anti No‑Show, CRM + Agenda Unificada + Dashboard.
 - Fluxo e Ferramentas → fluxos (Agendamento, Pré‑triagem/No‑show, FAQ) e ferramentas (CRM, Dashboard).
 - Ganhos Esperados → números do doc (conversão 15%→39%, no‑show 25%→10%, 1.750 consultas/mês etc.).

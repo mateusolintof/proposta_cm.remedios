@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Agentes de IA para Atendimento Comercial — Proposta CM Remédios",
   description:
-    "Proposta interativa com SDR + FAQ + Anti No‑Show, CRM e Agenda Unificada (IOP Tasy + Particular) para eficiência operacional e atendimento 24/7.",
+    "Proposta interativa com SDR + FAQ + Anti No‑Show, CRM e Agenda Unificada (sistemas da clínica + particular) para eficiência operacional e atendimento 24/7.",
   themeColor: "#ffffff",
   icons: { icon: "/favicon.ico" },
 };
