@@ -156,40 +156,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid md:grid-cols-2 gap-6">
-            <div className="card">
-              <h3 className="text-xl font-semibold text-prime">Alto volume sem qualificação</h3>
-              <ul className="mt-3 space-y-1 text-slate-700">
-                <li>• ~150 leads/dia; 1 lead a cada 3,2 min</li>
-                <li>• Qualificação básica consome 80% do tempo</li>
-                <li>• Falta priorização por urgência/aderência</li>
-              </ul>
-            </div>
-            <div className="card">
-              <h3 className="text-xl font-semibold text-prime">Agendas desconectadas</h3>
-              <ul className="mt-3 space-y-1 text-slate-700">
-                <li>• Agendas da clínica (sistemas internos) vs agenda particular</li>
-                <li>• Conflitos e sobreposições</li>
-                <li>• Dificuldade de encaixes e remarcações</li>
-              </ul>
-            </div>
-            <div className="card">
-              <h3 className="text-xl font-semibold text-prime">Zero visibilidade comercial</h3>
-              <ul className="mt-3 space-y-1 text-slate-700">
-                <li>• Não mede taxa de qualificação/conversão</li>
-                <li>• Gargalos desconhecidos no funil</li>
-                <li>• Sem previsão de no-show</li>
-              </ul>
-            </div>
-            <div className="card">
-              <h3 className="text-xl font-semibold text-prime">Tempo de resposta e follow-up</h3>
-              <ul className="mt-3 space-y-1 text-slate-700">
-                <li>• Leads fora do horário se perdem</li>
-                <li>• Falta follow-up estruturado</li>
-                <li>• Leads qualificados esfriam sem ação</li>
-              </ul>
-            </div>
-          </div>
+          {/* Cards antigos removidos conforme solicitação */}
         </div>
       </section>
 
