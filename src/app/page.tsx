@@ -239,21 +239,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O QUE MUDOU (duplicação de Nossas Soluções com ajustes) */}
+      {/* O QUE MUDOU (layout com cabeçalho + card full-width por coluna) */}
       <section className="section" id="oque-mudou">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="section-title">O que mudou?</h2>
           <p className="subtitle mt-2">Objecoes anteriores e novas solucoes de Agentes de IA.</p>
 
-          {/* Grid 2 colunas com linhas emparelhadas */}
-          <div className="mt-8 grid md:grid-cols-2 gap-6 items-stretch">
-            {/* Cabeçalhos */}
-            <div className="text-center text-prime font-extrabold">OBJEÇÕES</div>
-            <div className="text-center text-prime font-extrabold">SOLUÇÕES</div>
-
-            {/* Linha 1: Objeções (lista unificada) x Sistema MultiAgent */}
-            <div className="h-full">
-              <div className="card h-full">
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
+            {/* Coluna OBJEÇÕES */}
+            <div>
+              <div className="text-center text-prime font-extrabold">OBJEÇÕES</div>
+              <div className="card mt-4">
                 <ul className="text-slate-800 space-y-2">
                   <li>• Muitas Empresas estão aderindo e estão voltando atras</li>
                   <li>• Robo é mais eficiente porque não erra</li>
@@ -263,64 +259,49 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><Brain className="h-5 w-5"/> Sistema MultiAgent</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Subfluxos — agentes com conhecimento específico</li>
-                  <li className="text-slate-600 text-sm">Exemplo: um agente específico para Exames Oftalmológicos</li>
-                </ul>
-              </div>
-            </div>
 
-            {/* Linha 2: Sistemas modulares */}
-            <div className="hidden md:block" />
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><KanbanSquare className="h-5 w-5"/> Sistemas Modulares (FAQ, Agendamento)</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Vários fluxos independentes (podem se comunicar)</li>
-                  <li>• Reduz erros e permite testar/ajustar com eficiência</li>
-                  <li>• Escala gradual por necessidade</li>
-                  <li>• Possibilidade de criar sistemas específicos</li>
-                  <li className="pl-4">- um sistema para turno noturno</li>
-                  <li className="pl-4">- um sistema para horário comercial</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Linha 3: No-show e Remarcações */}
-            <div className="hidden md:block" />
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><BellRing className="h-5 w-5"/> No‑show e Remarcações</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Fila de espera: banco de dados de pacientes sem data disponível</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Linha 4: Pesquisa e Satisfação */}
-            <div className="hidden md:block" />
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><FileBarChart className="h-5 w-5"/> Agente de Pesquisa e Satisfação</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Envia o link do Google para avaliação</li>
-                  <li>• Insights de melhorias (usa avaliações negativas para melhoria interna)</li>
-                  <li>• Avaliações positivas: encaminha para o link do Google</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Linha 5: Fallback para humanos */}
-            <div className="hidden md:block" />
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><MessageSquare className="h-5 w-5"/> Fallback para Humanos</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• IA agenda; atendente valida em banco simples no início (evita erros)</li>
-                </ul>
+            {/* Coluna SOLUÇÕES */}
+            <div>
+              <div className="text-center text-prime font-extrabold">SOLUÇÕES</div>
+              <div className="card mt-4 space-y-5">
+                <div>
+                  <div className="font-semibold text-prime flex items-center gap-2"><Brain className="h-5 w-5"/> Sistema MultiAgent</div>
+                  <ul className="mt-2 text-slate-700 space-y-1">
+                    <li>• Subfluxos — agentes com conhecimento específico</li>
+                    <li className="text-slate-600 text-sm">Exemplo: um agente específico para Exames Oftalmológicos</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-prime flex items-center gap-2"><KanbanSquare className="h-5 w-5"/> Sistemas Modulares (FAQ, Agendamento)</div>
+                  <ul className="mt-2 text-slate-700 space-y-1">
+                    <li>• Vários fluxos independentes (podem se comunicar)</li>
+                    <li>• Reduz erros e permite testar/ajustar com eficiência</li>
+                    <li>• Escala gradual por necessidade</li>
+                    <li>• Possibilidade de criar sistemas específicos</li>
+                    <li className="pl-4">- um sistema para turno noturno</li>
+                    <li className="pl-4">- um sistema para horário comercial</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-prime flex items-center gap-2"><BellRing className="h-5 w-5"/> No‑show e Remarcações</div>
+                  <ul className="mt-2 text-slate-700 space-y-1">
+                    <li>• Fila de espera: banco de dados de pacientes sem data disponível</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-prime flex items-center gap-2"><FileBarChart className="h-5 w-5"/> Agente de Pesquisa e Satisfação</div>
+                  <ul className="mt-2 text-slate-700 space-y-1">
+                    <li>• Envia o link do Google para avaliação</li>
+                    <li>• Insights de melhorias (usa avaliações negativas para melhoria interna)</li>
+                    <li>• Avaliações positivas: encaminha para o link do Google</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-prime flex items-center gap-2"><MessageSquare className="h-5 w-5"/> Fallback para Humanos</div>
+                  <ul className="mt-2 text-slate-700 space-y-1">
+                    <li>• IA agenda; atendente valida em banco simples no início (evita erros)</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
