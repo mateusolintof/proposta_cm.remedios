@@ -535,41 +535,35 @@ export default function Home() {
               <div className="text-prime font-bold">Solução Full — Pacote Completo</div>
               <div className="mt-3 text-slate-800 space-y-2">
                 <div className="text-slate-600 text-sm">Investimento Único</div>
-                <div className="text-2xl font-extrabold">De R$ 40.000 → R$ 25.000</div>
+                <div className="text-2xl font-extrabold">De R$ 80.000 → R$ 60.000</div>
                 <div className="text-slate-600 text-sm">Mensalidade</div>
-                <div className="text-lg font-semibold">De R$ 4.000/mês → R$ 2.500/mês</div>
-                <div className="text-slate-700 text-sm mt-2">Inclui: SDR + FAQ + No‑Show + CRM + Agenda Unificada + Dashboard</div>
-                <div className="mt-3 text-sm text-slate-700">
-                  <div className="font-semibold text-slate-800">Extras</div>
-                  <ul className="mt-2 space-y-1">
-                    <li>• Treinamento (8h) e suporte 60 dias</li>
-                    <li>• Acompanhamento mensal (3 meses)</li>
-                  </ul>
-                </div>
+                <div className="text-lg font-semibold">De R$ 11.000/mês → R$ 7.000/mês</div>
+                <div className="text-slate-700 text-sm mt-2">Inclui: SDR + FAQ + No‑Show + CRM + Agente de Pesquisa + Dashboard</div>
               </div>
               <div className="mt-6 h-px bg-slate-200" />
             </div>
 
-            {/* Condições de Pagamento */}
+            {/* Bonificação + Condições de Pagamento */}
             <div className="card flex flex-col">
-              <div className="text-prime font-bold">Condições de Pagamento</div>
+              <div className="text-prime font-bold">Bonificação</div>
               <div className="mt-3 text-slate-800 space-y-3">
                 <div className="text-sm">
-                  <div className="font-semibold text-slate-800">Investimento Único</div>
+                  <div className="font-semibold text-slate-800">Descontos</div>
                   <ul className="mt-1 space-y-1 text-slate-700">
-                    <li>• À vista (5% de desconto)</li>
-                    <li>• 5 parcelas de R$ 5.000</li>
-                    <li>• 3x sem juros (cartão corporativo)</li>
+                    <li>• R$ 20.000,00 na Implementação</li>
+                    <li>• R$ 4.000,00 na Recorrência mensal</li>
                   </ul>
                 </div>
                 <div className="text-sm">
-                  <div className="font-semibold text-slate-800">Mensalidade</div>
+                  <div className="font-semibold text-slate-800">Condições de Pagamento</div>
                   <ul className="mt-1 space-y-1 text-slate-700">
-                    <li>• Inicia no mês seguinte ao go‑live</li>
-                    <li>• Faturamento via boleto ou PIX</li>
+                    <li>✓ À vista: R$ 54.000,00 (10% de desconto)</li>
+                    <li>✓ Entrada + Parcelas: R$ 20.000,00 + 5x de R$ 8.000,00</li>
+                    <li>ou</li>
+                    <li>R$ 40.000,00 + parcelas em até 10x</li>
                   </ul>
                 </div>
-                <div className="text-xs text-slate-600">Incluso: Infraestrutura, suporte (SLA 24h úteis), manutenção, segurança, backup e monitoramento 24/7.</div>
+                <div className="text-xs text-slate-600">Observação: a recorrência inicia após 60 dias da implantação.</div>
               </div>
               <div className="mt-6 h-px bg-slate-200" />
             </div>
