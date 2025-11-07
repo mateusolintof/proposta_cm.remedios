@@ -102,7 +102,59 @@ export default function Home() {
       <section className="section" id="desafio">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="section-title">Desafio Atual</h2>
-          <p className="subtitle mt-2">Contexto da {preparedFor}: alto volume de leads, agendas desconectadas e baixa visibilidade comercial.</p>
+          <p className="subtitle mt-2">Contexto da CM Remédios: Alto Volume de Leads sem atendimento adequado, muita insatisfação e reclamações sobre Atendimento.</p>
+
+          {/* Prints de contexto: 2 colunas (gmn/avaliacao à esquerda, reclameaqui1/reclameaqui2 à direita) */}
+          <div className="mt-6 grid md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/prints/gmn.png" alt="Avaliações Google Meu Negócio — CM Remédios" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/prints/avaliacao.png" alt="Avaliações de atendimento — CM Remédios" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+            </div>
+            <div className="space-y-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/prints/reclameaqui1.png" alt="Reclamações — Reclame Aqui (1) — CM Remédios" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/prints/reclameaqui2.png" alt="Reclamações — Reclame Aqui (2) — CM Remédios" className="w-full rounded-lg border border-slate-200 shadow-sm" />
+            </div>
+          </div>
+
+          {/* Gargalos Identificados */}
+          <div className="card mt-6">
+            <h3 className="text-xl font-bold text-prime mb-3">Gargalos Identificados</h3>
+            <div className="space-y-4 text-slate-800">
+              <div>
+                <div className="font-semibold">1. Atendimento ineficiente:</div>
+                <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700">
+                  <li>Atendimento online sobrecarregado:</li>
+                  <ul className="list-[circle] pl-5 space-y-1">
+                    <li>não consegue qualificar ou agendar corretamente</li>
+                    <li>não consegue buscar de forma eficiente as dúvidas e informações</li>
+                    <li>atendimento presencial fica limitado porque são muitas tarefas a serem executadas</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <div className="font-semibold">2. Alto volume sem atendimento</div>
+                <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700">
+                  <li>61% do tempo total da semana não tem atendimento humano (101 horas)</li>
+                  <ul className="list-[circle] pl-5 space-y-1">
+                    <li>Estudos mostram que 50% a 70% dos usuários que iniciam contato fora do horário comercial e só recebem resposta no dia seguinte não dão continuidade à conversa.</li>
+                    <li>Se o volume mensal é de 1000 pessoas, isso representa uma perda de ao menos 500 possíveis agendamentos.</li>
+                  </ul>
+                </ul>
+              </div>
+              <div>
+                <div className="font-semibold">3. Múltiplos gaps</div>
+                <ul className="mt-2 list-disc pl-5 space-y-1 text-slate-700">
+                  <li>Com alto volume de atendimento presencial e online, não é possível conferir corretamente:</li>
+                  <li>Taxa de no-show e remarcação</li>
+                  <li>Informações sobre exames e procedimentos, o que pode acarretar em retrabalho e tempo que poderia ser destinado à conversão ou a um atendimento de qualidade.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-10 grid md:grid-cols-2 gap-6">
             <div className="card">
