@@ -73,7 +73,7 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="section bg-gradient-to-b from-white to-slate-50" id="hero">
+      <section className="section bg-white" id="hero">
         <div className="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <span className="hero-kicker">PROPOSTA DE SOLUÇÃO COM IA</span>
@@ -91,7 +91,7 @@ export default function Home() {
             {/* Botões removidos conforme ajustes */}
           </div>
           <div className="flex justify-center">
-            <Logo width={420} alt={`Logo ${preparedFor}`} className="drop-shadow-md" />
+            <Logo mode="cover" containerWidth={520} containerHeight={190} alt={`Logo ${preparedFor}`} className="drop-shadow-md rounded-xl" />
           </div>
         </div>
       </section>
