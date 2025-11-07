@@ -91,7 +91,7 @@ export default function Home() {
             {/* Botões removidos conforme ajustes */}
           </div>
           <div className="flex justify-center">
-            <Logo width={420} height={150} alt={`Logo ${preparedFor}`} className="drop-shadow-md" />
+            <Logo width={420} alt={`Logo ${preparedFor}`} className="drop-shadow-md" />
           </div>
         </div>
       </section>

@@ -4,12 +4,12 @@ import { useState } from "react";
 
 type Props = {
   alt: string;
-  width: number;
-  height: number;
+  width: number; // regra: preservar proporção (altura automática)
+  height?: number; // ignorada para manter aspect ratio
   className?: string;
 };
 
-export default function Logo({ alt, width, height, className }: Props) {
+export default function Logo({ alt, width, className }: Props) {
   const sources = [
     "/branding/logo.svg",
     "/branding/logo-21anos.png",
@@ -23,11 +23,10 @@ export default function Logo({ alt, width, height, className }: Props) {
       src={sources[idx]}
       alt={alt}
       width={width}
-      height={height}
+      style={{ height: "auto" }}
       className={className}
       onError={() => setIdx((i) => Math.min(i + 1, sources.length - 1))}
       decoding="async"
     />
   );
 }
-
