@@ -164,7 +164,7 @@ export default function Home() {
       <section className="section bg-slate-50" id="solucoes">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="section-title">Nossas Soluções</h2>
-          <p className="subtitle mt-2">Soluções integradas para qualificar, agendar, reduzir no‑show e dar visibilidade total (CRM + Agenda Unificada + Dashboard).</p>
+          <p className="subtitle mt-2">Solucoes modulares para qualificar, agendar, reduzir no-show e dar visibilidade total (CRM + Dashboard).</p>
 
           <div className="mt-8">
             <div className="card">
@@ -175,6 +175,7 @@ export default function Home() {
                 <div className="font-semibold text-prime flex items-center gap-2"><CalendarCheck2 className="h-5 w-5"/> SDR Qualificador + Agendamento (WhatsApp)</div>
                 <ul className="mt-2 text-slate-700 space-y-1">
                   <li>• Atendimento 24/7 com resposta imediata</li>
+                  <li>• Fluxos especializados em consultas e exames</li>
                   <li>• Qualificação automática (particular × convênio)</li>
                   <li>• Validação de convênios e proposta de horários</li>
                 </ul>
@@ -196,9 +197,9 @@ export default function Home() {
                 </ul>
               </div>
               <div className="card">
-                <div className="font-semibold text-prime flex items-center gap-2"><Stethoscope className="h-5 w-5"/> CRM + Agenda Unificada + Dashboard</div>
+                <div className="font-semibold text-prime flex items-center gap-2"><Stethoscope className="h-5 w-5"/> CRM + Dashboard</div>
                 <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Unifica agendas da clínica (sistemas internos) + particular</li>
+                  <li>• Integrações com sistemas externos</li>
                   <li>• Funis, tags e histórico completo no CRM</li>
                   <li>• KPIs, funil e relatórios executivos</li>
                 </ul>
