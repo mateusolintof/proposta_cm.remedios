@@ -503,6 +503,31 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Card horizontal abaixo dos 3 cards */}
+          <div className="mt-6">
+            <div className="card flex flex-col">
+              <div className="text-prime font-bold">Agente Pós-venda</div>
+              <div className="mt-3 text-slate-800 space-y-2">
+                <div>
+                  <div className="text-slate-600 text-sm">Implementação</div>
+                  <div className="text-xl font-bold">R$ 10.000,00</div>
+                  <div className="text-slate-600 text-xs">Pagamento único</div>
+                </div>
+                <div>
+                  <div className="text-slate-600 text-sm">Recorrência</div>
+                  <div className="text-lg font-semibold">R$ 2.000,00/mês</div>
+                </div>
+                <ul className="mt-2 text-sm text-slate-700 space-y-1">
+                  <li>• Entra em contato com os pacientes e realiza pesquisa de satisfação</li>
+                  <li>• Leitura e Análise de Sentimentos</li>
+                  <li>• Sentimento positivo → envia link do Google</li>
+                  <li>• Sentimento negativo → rapport + insight interno</li>
+                </ul>
+              </div>
+              <div className="mt-6 h-px bg-slate-200" />
+            </div>
+          </div>
+
           {/* Linha inferior (modelo2): 2 cards */}
           <div className="mt-8 grid md:grid-cols-2 gap-6 items-stretch">
             {/* Solução completa (Full) */}
