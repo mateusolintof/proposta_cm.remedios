@@ -101,7 +101,7 @@ export default function Home() {
       <section className="section" id="desafio">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="section-title">Desafio Atual</h2>
-          <p className="subtitle mt-2">Contexto do consultório do {preparedFor}: alto volume de leads, agendas desconectadas e baixa visibilidade comercial.</p>
+          <p className="subtitle mt-2">Contexto da {preparedFor}: alto volume de leads, agendas desconectadas e baixa visibilidade comercial.</p>
 
           <div className="mt-10 grid md:grid-cols-2 gap-6">
             <div className="card">
