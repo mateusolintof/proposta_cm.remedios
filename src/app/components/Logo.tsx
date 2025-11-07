@@ -14,9 +14,9 @@ type Props = {
 
 export default function Logo({ alt, width, className, mode = "contain", containerWidth, containerHeight }: Props) {
   const sources = [
-    "/branding/logo.svg",
     "/branding/logo-21anos.png",
     "/branding/cmremedios-logo.png",
+    "/branding/logo.svg",
   ];
   const [idx, setIdx] = useState(0);
 
