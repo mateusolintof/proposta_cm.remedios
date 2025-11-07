@@ -5,10 +5,10 @@
   --background: #ffffff;
   --foreground: #0f172a; /* slate-900 */
   color-scheme: light; /* força tema claro */
-  /* Dr. Maurício — identidade (navy + azul claro) */
-  --prime-primary: #041e42; /* navy escuro */
-  --prime-accent: #41b6e6;  /* azul claro */
-  --prime-dark: #041e42;    /* para texto em botões/acento */
+  /* CM Remédios — identidade (azul + amarelo) */
+  --prime-primary: #235aa0; /* azul principal do site */
+  --prime-accent: #f1c309;  /* amarelo de destaque */
+  --prime-dark: #203158;    /* navy escuro para contraste */
 }
 
 @theme inline {

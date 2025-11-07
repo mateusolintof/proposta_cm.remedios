@@ -1,6 +1,6 @@
 🎯 PROPOSTA DE PROJETO
 Sistema de Agentes de IA Conversacionais
-Dr. Mauricio Ernesto | Ortopedia e Cirurgia do Joelho
+CM Remédios | Centro Médico dos Remédios
 Preparado por: Alex, Arquiteto Sênior de Agentes de IA
 Data: Outubro 2025
 
@@ -102,7 +102,7 @@ Agente especialista que responde dúvidas sobre procedimentos, tratamentos e inf
 💰 Valores e Convênios
    └─ Cobertura por plano de saúde
    
-👨‍⚕️ Sobre o Dr. Mauricio
+👨‍⚕️ Sobre a CM Remédios
    └─ Formação, especialização, experiência
    
 📍 Localização e Horários
@@ -187,7 +187,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
                          ▼
 ┌─────────────────────────────────────────────────────────────┐
 │               🤖 AGENTE ORQUESTRADOR                        │
-│  "Olá! Sou assistente do Dr. Mauricio. Como posso ajudar?" │
+│  "Olá! Sou assistente da CM Remédios. Como posso ajudar?" │
 └────────────────────────┬────────────────────────────────────┘
                          │
            ┌─────────────┴─────────────┐
@@ -316,7 +316,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
 │      🎯 TENTATIVA DE CONVERSÃO                  │
 │                                                 │
 │  "Gostaria de agendar uma consulta com         │
-│   Dr. Mauricio para avaliar seu caso?"         │
+│   CM Remédios para avaliar seu caso?"         │
 └─────────────────┬───────────────────────────────┘
                   │
            ┌──────┴──────┐
@@ -352,7 +352,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
 │   📱 MENSAGEM AUTOMÁTICA                        │
 │                                                 │
 │   "Olá [Nome]! Você tem consulta com           │
-│    Dr. Mauricio dia [X] às [Y].                │
+│    CM Remédios dia [X] às [Y].                │
 │                                                 │
 │    Confirma sua presença?"                      │
 │                                                 │
@@ -674,7 +674,7 @@ Sistema centralizado para controlar leads, unificar agendas (Hospital + Particul
 Entender profundamente o negócio e desenhar a arquitetura técnica ideal.
 
 #### **ESCOPO:**
-- Workshop de imersão com Dr. Mauricio e equipe
+- Workshop de imersão com equipe CM Remédios
 - Mapeamento detalhado de processos atuais
 - Definição de fluxos conversacionais
 - Desenho da arquitetura de agentes
@@ -719,7 +719,7 @@ Entender profundamente o negócio e desenhar a arquitetura técnica ideal.
 - ✅ Plano de implementação técnica
 
 #### **CRITÉRIOS DE ACEITE:**
-- [ ] Dr. Mauricio aprovou todos os fluxos conversacionais
+- [ ] Equipe CM Remédios aprovou todos os fluxos conversacionais
 - [ ] Equipe validou que conversas refletem realidade atual
 - [ ] Documento de arquitetura revisado e aprovado
 - [ ] Todos os cenários críticos foram mapeados
@@ -949,7 +949,7 @@ Colocar sistema em produção, monitorar intensivamente e ajustar baseado em dad
   - Taxa de qualificação: > 50%
   - Satisfação: > 4.5/5
   - No-show: < 15%
-- [ ] Dr. Mauricio aprovou go-live definitivo
+- [ ] CM Remédios aprovou go-live definitivo
 
 </details>
 

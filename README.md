@@ -1,4 +1,4 @@
-Proposta — Dr. Maurício Ernesto • Agentes de IA para Atendimento Comercial
+Proposta — CM Remédios • Agentes de IA para Atendimento Comercial
 
 Stack: Next.js 15 (App Router) + Tailwind v4 + React Flow + Framer Motion + Lucide.
 
@@ -16,11 +16,11 @@ Como rodar (porta 3001)
 - Start prod: `npm start`
 
 Estrutura (onde customizado)
-- `src/app/page.tsx` — hero, seções e modais. `preparedFor = "Dr. Maurício Ernesto"` e data já setados.
+- `src/app/page.tsx` — hero, seções e modais. `preparedFor = "CM Remédios"` e data já setados.
 - `src/app/components/Modal.tsx` — modal animado (`size="full" | "md"`).
 - `src/app/components/FlowDiagram.tsx` — fluxos dos agentes com “Agenda Unificada (Tasy + Particular)”.
-- `src/app/globals.css` — tokens de tema adaptados ao cliente (`#041e42` e `#41b6e6`).
-- `public/branding/logo.svg` — logo do Dr. Maurício (referência ao SVG oficial do site).
+- `src/app/globals.css` — tokens de tema adaptados ao cliente (`#235aa0`, `#f1c309`, `#203158`).
+- `public/branding/cmremedios-logo.png` — logo oficial capturado do site.
 
 Seções (resumo)
 - Hero → “Agentes de IA para Atendimento Comercial”.
@@ -42,5 +42,5 @@ Observações
 - Ícones: Lucide (CalendarCheck2, BellRing, MessageSquare, Stethoscope, KanbanSquare, BarChart3, BrainCircuit).
 
 Identidade visual
-- Cores definidas em `src/app/globals.css`: `--prime-primary: #041e42` e `--prime-accent: #41b6e6`.
-- Logo em `public/branding/logo.svg` (SVG oficial incluído localmente).
+- Cores definidas em `src/app/globals.css`: `--prime-primary: #235aa0`, `--prime-accent: #f1c309`, `--prime-dark: #203158`.
+- Logo em `public/branding/cmremedios-logo.png` (extraída de https://cmremedios.com.br/).

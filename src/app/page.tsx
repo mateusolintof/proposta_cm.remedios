@@ -19,8 +19,8 @@ import Modal from "./components/Modal";
 import { type FlowKind } from "./components/FlowDiagram";
 
 // Atualize estes campos para cada nova proposta
-const preparedFor = "Dr. Maurício Ernesto";
-const proposalDate = "Outubro 2025";
+const preparedFor = "CM Remédios";
+const proposalDate = "Novembro 2025";
 
 const FlowDiagramLazy = dynamic<{ kind: FlowKind }>(
   () => import("./components/FlowDiagram"),
@@ -57,7 +57,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-100">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-6">
           <div className="flex items-center gap-2">
-            <Image src="/branding/logo.svg" alt={`Logo ${preparedFor}`} width={120} height={40} />
+            <Image src="/branding/cmremedios-logo.png" alt={`Logo ${preparedFor}`} width={120} height={40} />
           </div>
           <nav className="ml-auto hidden md:flex items-center gap-6 text-sm">
             <a className="hover:text-prime" href="#desafio">Desafio</a>
@@ -90,7 +90,7 @@ export default function Home() {
             {/* Botões removidos conforme ajustes */}
           </div>
           <div className="flex justify-center">
-            <Image src="/branding/logo.svg" width={420} height={150} alt={`Logo ${preparedFor}`} className="drop-shadow-md" />
+            <Image src="/branding/cmremedios-logo.png" width={420} height={150} alt={`Logo ${preparedFor}`} className="drop-shadow-md" />
           </div>
         </div>
       </section>
