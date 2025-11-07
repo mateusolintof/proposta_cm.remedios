@@ -435,67 +435,68 @@ export default function Home() {
 
           {/* Linha superior (modelo1): 3 cards com destaque no centro */}
           <div className="mt-8 grid md:grid-cols-3 gap-6 items-stretch">
-            {/* Esquerda - FAQ Inteligente */}
+            {/* Esquerda - Agente FAQ + Informações Gerais */}
             <div className="card flex flex-col">
-              <div className="text-prime font-bold">FAQ Inteligente</div>
+              <div className="text-prime font-bold">Agente FAQ + Informações Gerais</div>
               <div className="mt-3 text-slate-800 space-y-2">
                 <div>
-                  <div className="text-slate-600 text-sm">Investimento Único (Setup + Dev)</div>
+                  <div className="text-slate-600 text-sm">Implementação</div>
                   <div className="text-xl font-bold">R$ 10.000,00</div>
+                  <div className="text-slate-600 text-xs">Pagamento único</div>
                 </div>
                 <div>
-                  <div className="text-slate-600 text-sm">Mensalidade</div>
-                  <div className="text-lg font-semibold">R$ 800,00/mês</div>
+                  <div className="text-slate-600 text-sm">Recorrência</div>
+                  <div className="text-lg font-semibold">R$ 2.000,00/mês</div>
                 </div>
                 <ul className="mt-2 text-sm text-slate-700 space-y-1">
-                  <li>• Agente FAQ especialista</li>
-                  <li>• Base de conhecimento completa</li>
-                  <li>• Integração com WhatsApp</li>
-                  <li>• Métricas de conversão FAQ→Lead</li>
+                  <li>• Desenvolvimento e Suporte</li>
+                  <li>• Implementação sistema de OCR (extrai dados de documentos)</li>
+                  <li>• Acesso ao Banco de Conhecimento personalizado</li>
                 </ul>
               </div>
               <div className="mt-6 h-px bg-slate-200" />
             </div>
 
-            {/* Centro - destaque (SDR Qualificador + Agendamento) */}
+            {/* Centro - destaque (Agendamento Inteligente) */}
             <div className="card flex flex-col ring-2 ring-prime shadow-lg md:-mt-3">
-              <div className="text-prime font-extrabold">SDR Qualificador + Agendamento</div>
+              <div className="text-prime font-extrabold">Agendamento Inteligente</div>
               <div className="mt-3 text-slate-800 space-y-2">
                 <div>
-                  <div className="text-slate-600 text-sm">Investimento Único (Setup + Dev)</div>
-                  <div className="text-2xl font-extrabold">R$ 20.000,00</div>
+                  <div className="text-slate-600 text-sm">Implementação</div>
+                  <div className="text-2xl font-extrabold">R$ 45.000,00</div>
+                  <div className="text-slate-600 text-xs">Pagamento único</div>
                 </div>
                 <div>
-                  <div className="text-slate-600 text-sm">Mensalidade</div>
-                  <div className="text-xl font-bold">R$ 2.200,00/mês</div>
+                  <div className="text-slate-600 text-sm">Recorrência</div>
+                  <div className="text-xl font-bold">R$ 5.000,00/mês</div>
                 </div>
                 <ul className="mt-2 text-sm text-slate-700 space-y-1">
-                  <li>• Agente Orquestrador + SDR (Particular/Convênio)</li>
-                  <li>• Validação de convênios</li>
-                  <li>• Integração Omnichannel + CRM</li>
-                  <li>• Dashboard essencial</li>
+                  <li>• Qualificação e Agendamento</li>
+                  <li>• Desenvolvimento Personalizado</li>
+                  <li>• Implementação e Treinamentos</li>
+                  <li>• Suporte + Otimizações</li>
                 </ul>
               </div>
               <div className="mt-6 h-px bg-slate-200" />
             </div>
 
-            {/* Direita - Anti No‑Show */}
+            {/* Direita - Agente Pré-triagem + Anti No‑Show */}
             <div className="card flex flex-col">
-              <div className="text-prime font-bold">Anti No‑Show</div>
+              <div className="text-prime font-bold">Agente Pré-triagem + Anti No-Show</div>
               <div className="mt-3 text-slate-800 space-y-2">
                 <div>
-                  <div className="text-slate-600 text-sm">Investimento Único (Setup + Dev)</div>
-                  <div className="text-xl font-bold">R$ 10.000,00</div>
+                  <div className="text-slate-600 text-sm">Implementação</div>
+                  <div className="text-xl font-bold">R$ 15.000,00</div>
+                  <div className="text-slate-600 text-xs">Pagamento único</div>
                 </div>
                 <div>
-                  <div className="text-slate-600 text-sm">Mensalidade</div>
-                  <div className="text-lg font-semibold">R$ 1.000,00/mês</div>
+                  <div className="text-slate-600 text-sm">Recorrência</div>
+                  <div className="text-lg font-semibold">R$ 2.000,00/mês</div>
                 </div>
                 <ul className="mt-2 text-sm text-slate-700 space-y-1">
-                  <li>• Confirmações D‑2/D‑1/D‑2h</li>
-                  <li>• Reagendamento inteligente + fila de espera</li>
-                  <li>• Follow‑up pós‑consulta</li>
-                  <li>• Integração com CRM + métricas de no‑show</li>
+                  <li>• Desenvolvimento e Suporte</li>
+                  <li>• Acesso ao Banco de Conhecimento</li>
+                  <li>• Agente ativo (inicia as conversas)</li>
                 </ul>
               </div>
               <div className="mt-6 h-px bg-slate-200" />
