@@ -102,60 +102,68 @@ export default function Home() {
           <h2 className="section-title">O que mudou?</h2>
           <p className="subtitle mt-2">Objecoes anteriores e novas solucoes de Agentes de IA.</p>
 
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            {/* Coluna esquerda: Objeções */}
-            <div>
-              <div className="text-center text-prime font-extrabold">OBJEÇÕES</div>
-              <div className="mt-4 space-y-6">
-                <div className="card">
-                  <div className="font-semibold text-prime">Atendimento ineficiente</div>
-                  <ul className="mt-2 text-slate-700 space-y-1">
-                    <li>• Atendimento online sobrecarregado</li>
-                    <li className="pl-4">- não consegue qualificar ou agendar corretamente</li>
-                    <li className="pl-4">- não consegue buscar de forma eficiente as dúvidas e informações</li>
-                    <li className="pl-4">- atendimento presencial fica limitado por excesso de tarefas</li>
-                  </ul>
-                </div>
-                <div className="card">
-                  <div className="font-semibold text-prime">Volume e visibilidade</div>
-                  <ul className="mt-2 text-slate-700 space-y-1">
-                    <li>• 61% do tempo semanal sem atendimento humano (101 horas)</li>
-                    <li>• Falta de previsibilidade de no-show e remarcação</li>
-                    <li>• Dados de exames/procedimentos dispersos (retrabalho e perda de foco)</li>
-                  </ul>
-                </div>
+          {/* Grid de 2 colunas com linhas emparelhadas para alturas iguais */}
+          <div className="mt-8 grid md:grid-cols-2 gap-6 items-stretch">
+            {/* Cabeçalhos */}
+            <div className="text-center text-prime font-extrabold">OBJEÇÕES</div>
+            <div className="text-center text-prime font-extrabold">SOLUÇÕES</div>
+
+            {/* Linha 1 */}
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime">Atendimento ineficiente</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• Atendimento online sobrecarregado</li>
+                  <li className="pl-4">- não consegue qualificar ou agendar corretamente</li>
+                  <li className="pl-4">- não consegue buscar de forma eficiente as dúvidas e informações</li>
+                  <li className="pl-4">- atendimento presencial fica limitado por excesso de tarefas</li>
+                </ul>
+              </div>
+            </div>
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime flex items-center gap-2"><CalendarCheck2 className="h-5 w-5"/> SDR Qualificador + Agendamento (WhatsApp)</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• Atendimento 24/7 com resposta imediata</li>
+                  <li>• Fluxos especializados em consultas e exames</li>
+                  <li>• Qualificação automática (particular × convênio)</li>
+                  <li>• Validação de convênios e proposta de horários</li>
+                </ul>
               </div>
             </div>
 
-            {/* Coluna direita: Soluções */}
-            <div>
-              <div className="text-center text-prime font-extrabold">SOLUÇÕES</div>
-              <div className="mt-4 space-y-6">
-                <div className="card">
-                  <div className="font-semibold text-prime flex items-center gap-2"><CalendarCheck2 className="h-5 w-5"/> SDR Qualificador + Agendamento (WhatsApp)</div>
-                  <ul className="mt-2 text-slate-700 space-y-1">
-                    <li>• Atendimento 24/7 com resposta imediata</li>
-                    <li>• Fluxos especializados em consultas e exames</li>
-                    <li>• Qualificação automática (particular × convênio)</li>
-                    <li>• Validação de convênios e proposta de horários</li>
-                  </ul>
-                </div>
-                <div className="card">
-                  <div className="font-semibold text-prime flex items-center gap-2"><Stethoscope className="h-5 w-5"/> CRM + Dashboard</div>
-                  <ul className="mt-2 text-slate-700 space-y-1">
-                    <li>• Integrações com sistemas externos</li>
-                    <li>• Funis, tags e histórico completo no CRM</li>
-                    <li>• KPIs, funil e relatórios executivos</li>
-                  </ul>
-                </div>
-                <div className="card">
-                  <div className="font-semibold text-prime flex items-center gap-2"><BellRing className="h-5 w-5"/> Anti No‑Show + Follow‑Up</div>
-                  <ul className="mt-2 text-slate-700 space-y-1">
-                    <li>• Lembretes D‑2, D‑1 e D‑2h + confirmação</li>
-                    <li>• Reagendamento automático e fila de espera</li>
-                    <li>• Follow‑up pós‑consulta (NPS, retornos, exames)</li>
-                  </ul>
-                </div>
+            {/* Linha 2 */}
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime">Volume e visibilidade</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• 61% do tempo semanal sem atendimento humano (101 horas)</li>
+                  <li>• Falta de previsibilidade de no-show e remarcação</li>
+                  <li>• Dados de exames/procedimentos dispersos (retrabalho e perda de foco)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime flex items-center gap-2"><Stethoscope className="h-5 w-5"/> CRM + Dashboard</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• Integrações com sistemas externos</li>
+                  <li>• Funis, tags e histórico completo no CRM</li>
+                  <li>• KPIs, funil e relatórios executivos</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Linha 3: apenas solução (placeholder vazio à esquerda para manter grid) */}
+            <div className="hidden md:block" />
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime flex items-center gap-2"><BellRing className="h-5 w-5"/> Anti No‑Show + Follow‑Up</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• Lembretes D‑2, D‑1 e D‑2h + confirmação</li>
+                  <li>• Reagendamento automático e fila de espera</li>
+                  <li>• Follow‑up pós‑consulta (NPS, retornos, exames)</li>
+                </ul>
               </div>
             </div>
           </div>
