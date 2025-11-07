@@ -245,67 +245,81 @@ export default function Home() {
           <h2 className="section-title">O que mudou?</h2>
           <p className="subtitle mt-2">Objecoes anteriores e novas solucoes de Agentes de IA.</p>
 
-          {/* Grid de 2 colunas com linhas emparelhadas para alturas iguais */}
+          {/* Grid 2 colunas com linhas emparelhadas */}
           <div className="mt-8 grid md:grid-cols-2 gap-6 items-stretch">
             {/* Cabeçalhos */}
             <div className="text-center text-prime font-extrabold">OBJEÇÕES</div>
             <div className="text-center text-prime font-extrabold">SOLUÇÕES</div>
 
-            {/* Linha 1 */}
+            {/* Linha 1: Objeções (lista unificada) x Sistema MultiAgent */}
             <div className="h-full">
               <div className="card h-full">
-                <div className="font-semibold text-prime">Atendimento ineficiente</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Atendimento online sobrecarregado</li>
-                  <li className="pl-4">- não consegue qualificar ou agendar corretamente</li>
-                  <li className="pl-4">- não consegue buscar de forma eficiente as dúvidas e informações</li>
-                  <li className="pl-4">- atendimento presencial fica limitado por excesso de tarefas</li>
+                <ul className="text-slate-800 space-y-2">
+                  <li>• Muitas Empresas estão aderindo e estão voltando atras</li>
+                  <li>• Robo é mais eficiente porque não erra</li>
+                  <li>• Integrações → Não é possível integrar com agenda médica e outras ferramentas</li>
+                  <li>• As soluções de IA conseguem atender a demanda?</li>
+                  <li>• E as alucinações e erros da IA?</li>
                 </ul>
               </div>
             </div>
             <div className="h-full">
               <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><CalendarCheck2 className="h-5 w-5"/> SDR Qualificador + Agendamento (WhatsApp)</div>
+                <div className="font-semibold text-prime flex items-center gap-2"><Brain className="h-5 w-5"/> Sistema MultiAgent</div>
                 <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Atendimento 24/7 com resposta imediata</li>
-                  <li>• Fluxos especializados em consultas e exames</li>
-                  <li>• Qualificação automática (particular × convênio)</li>
-                  <li>• Validação de convênios e proposta de horários</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Linha 2 */}
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime">Volume e visibilidade</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• 61% do tempo semanal sem atendimento humano (101 horas)</li>
-                  <li>• Falta de previsibilidade de no-show e remarcação</li>
-                  <li>• Dados de exames/procedimentos dispersos (retrabalho e perda de foco)</li>
-                </ul>
-              </div>
-            </div>
-            <div className="h-full">
-              <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><Stethoscope className="h-5 w-5"/> CRM + Dashboard</div>
-                <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Integrações com sistemas externos</li>
-                  <li>• Funis, tags e histórico completo no CRM</li>
-                  <li>• KPIs, funil e relatórios executivos</li>
+                  <li>• Subfluxos — agentes com conhecimento específico</li>
+                  <li className="text-slate-600 text-sm">Exemplo: um agente específico para Exames Oftalmológicos</li>
                 </ul>
               </div>
             </div>
 
-            {/* Linha 3: apenas solução (placeholder vazio à esquerda para manter grid) */}
+            {/* Linha 2: Sistemas modulares */}
             <div className="hidden md:block" />
             <div className="h-full">
               <div className="card h-full">
-                <div className="font-semibold text-prime flex items-center gap-2"><BellRing className="h-5 w-5"/> Anti No‑Show + Follow‑Up</div>
+                <div className="font-semibold text-prime flex items-center gap-2"><KanbanSquare className="h-5 w-5"/> Sistemas Modulares (FAQ, Agendamento)</div>
                 <ul className="mt-2 text-slate-700 space-y-1">
-                  <li>• Lembretes D‑2, D‑1 e D‑2h + confirmação</li>
-                  <li>• Reagendamento automático e fila de espera</li>
-                  <li>• Follow‑up pós‑consulta (NPS, retornos, exames)</li>
+                  <li>• Vários fluxos independentes (podem se comunicar)</li>
+                  <li>• Reduz erros e permite testar/ajustar com eficiência</li>
+                  <li>• Escala gradual por necessidade</li>
+                  <li>• Possibilidade de criar sistemas específicos</li>
+                  <li className="pl-4">- um sistema para turno noturno</li>
+                  <li className="pl-4">- um sistema para horário comercial</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Linha 3: No-show e Remarcações */}
+            <div className="hidden md:block" />
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime flex items-center gap-2"><BellRing className="h-5 w-5"/> No‑show e Remarcações</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• Fila de espera: banco de dados de pacientes sem data disponível</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Linha 4: Pesquisa e Satisfação */}
+            <div className="hidden md:block" />
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime flex items-center gap-2"><FileBarChart className="h-5 w-5"/> Agente de Pesquisa e Satisfação</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• Envia o link do Google para avaliação</li>
+                  <li>• Insights de melhorias (usa avaliações negativas para melhoria interna)</li>
+                  <li>• Avaliações positivas: encaminha para o link do Google</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Linha 5: Fallback para humanos */}
+            <div className="hidden md:block" />
+            <div className="h-full">
+              <div className="card h-full">
+                <div className="font-semibold text-prime flex items-center gap-2"><MessageSquare className="h-5 w-5"/> Fallback para Humanos</div>
+                <ul className="mt-2 text-slate-700 space-y-1">
+                  <li>• IA agenda; atendente valida em banco simples no início (evita erros)</li>
                 </ul>
               </div>
             </div>
