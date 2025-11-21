@@ -14,6 +14,13 @@ import {
   Brain,
   Lightbulb,
   FileBarChart,
+  CheckCircle2,
+  ShieldCheck,
+  Briefcase,
+  Calculator,
+  DollarSign,
+  TrendingUp,
+  ArrowRight,
 } from "lucide-react";
 import Modal from "./components/Modal";
 import { type FlowKind } from "./components/FlowDiagram";
@@ -45,6 +52,7 @@ type ModalKind =
   | { type: "inteligencia" }
   | { type: "insights" }
   | { type: "relatorios" }
+  | { type: "roi" }
   | null;
 
 export default function Home() {
@@ -65,7 +73,9 @@ export default function Home() {
             <a className="hover:text-prime" href="#solucoes">Soluções</a>
             <a className="hover:text-prime" href="#fluxos">Fluxos</a>
             <a className="hover:text-prime" href="#plano">Plano</a>
+            <a className="hover:text-prime" href="#entregaveis">Entregáveis</a>
             <a className="hover:text-prime" href="#ganhos">Ganhos</a>
+            <a className="hover:text-prime" href="#roi">ROI</a>
             <a className="hover:text-prime" href="#investimento">Investimento</a>
             <a className="hover:text-prime" href="#cta">Próximos passos</a>
           </nav>
@@ -427,6 +437,83 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ENTREGÁVEIS */}
+      <section className="section bg-slate-50" id="entregaveis">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="section-title">O que será entregue</h2>
+          <p className="subtitle mt-2">Itens tangíveis para colocar os agentes em produção e manter a operação visível.</p>
+
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <div className="card">
+              <div className="text-lg font-bold text-prime flex items-center gap-2"><Briefcase className="h-5 w-5" /> Setup Tecnológico</div>
+              <ul className="mt-4 space-y-3 text-slate-700 text-sm">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" />
+                  <span><strong>Agentes SDR, FAQ e No‑Show</strong> treinados com base de conhecimento e objeções reais da {preparedFor}.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" />
+                  <span><strong>Integração</strong> com agendas da clínica (leitura/escrita) e fallback humano configurado para casos críticos.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" />
+                  <span><strong>Painéis de Gestão</strong> (CRM + Dashboard) com métricas do diagnóstico e filtros por canal/especialidade.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <div className="text-lg font-bold text-prime flex items-center gap-2"><ShieldCheck className="h-5 w-5" /> Serviços & Garantias</div>
+              <ul className="mt-4 space-y-3 text-slate-700 text-sm">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-blue-600 shrink-0" />
+                  <span><strong>Treinamento</strong> da equipe assistencial e comercial para operar fluxos, CRM e scripts de contingência.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-blue-600 shrink-0" />
+                  <span><strong>Monitoramento assistido</strong> nos primeiros 30 dias (ajustes finos e melhoria contínua dos agentes).</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-blue-600 shrink-0" />
+                  <span><strong>LGPD, segurança e suporte</strong> com plano de testes, observabilidade e SLA de atendimento.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CALCULADORA ROI */}
+      <section className="section bg-white" id="roi">
+        <div className="mx-auto max-w-6xl px-4 text-center">
+          <h2 className="section-title">Viabilidade Financeira</h2>
+          <p className="subtitle mt-3 max-w-3xl mx-auto">
+            Simule o impacto financeiro combinando recuperação de leads perdidos e redução de custos operacionais.
+          </p>
+
+          <div className="mt-8 grid sm:grid-cols-3 gap-4">
+            {[
+              { label: "Leads/mês estimados", value: "4.500", detail: "150 por dia útil" },
+              { label: "Conversão projetada com IA", value: "35%", detail: "vs 15% atual" },
+              { label: "Ticket médio (referência)", value: "R$ 400", detail: "ajustável na simulação" },
+            ].map((item) => (
+              <div key={item.label} className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-left shadow-sm">
+                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wide">{item.label}</div>
+                <div className="text-2xl font-bold text-prime mt-1">{item.value}</div>
+                <div className="text-sm text-slate-600">{item.detail}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 flex flex-col items-center gap-3">
+            <button className="btn-primary text-base px-8 py-3 shadow-lg shadow-prime/20" onClick={() => setModal({ type: "roi" })}>
+              Abrir Calculadora de ROI
+            </button>
+            <div className="text-xs text-slate-500">Números de referência; ajuste com dados reais da {preparedFor}.</div>
+          </div>
+        </div>
+      </section>
+
       {/* INVESTIMENTO - adaptado ao documento de arquitetura */}
       <section className="section" id="investimento">
         <div className="mx-auto max-w-6xl px-4">
@@ -654,6 +741,10 @@ export default function Home() {
         <DashboardModalContent />
       </Modal>
 
+      <Modal open={modal?.type === "roi"} onClose={() => setModal(null)} title="Simulador de ROI">
+        <RoiModalContent preparedFor={preparedFor} />
+      </Modal>
+
       {/* Modal Fases do Projeto */}
       <Modal
         open={modal?.type === "phases"}
@@ -680,6 +771,145 @@ export default function Home() {
       <Modal open={modal?.type === "relatorios"} onClose={() => setModal(null)} title="Relatórios Avançados com Cruzamento de Dados">
         <RelatoriosModalContentDoc />
       </Modal>
+    </div>
+  );
+}
+
+// Simulador de ROI (adaptado para CM Remédios)
+function RoiModalContent({ preparedFor }: { preparedFor: string }) {
+  type FaturamentoInputs = {
+    leadsMes: number;
+    taxaConversaoAtual: number;
+    taxaConversaoNova: number;
+    ticketMedio: number;
+  };
+
+  const [inputs, setInputs] = useState<FaturamentoInputs>({
+    leadsMes: 4500,
+    taxaConversaoAtual: 15,
+    taxaConversaoNova: 35,
+    ticketMedio: 400,
+  });
+
+  const investimento = 60000; // setup ilustrativo (referência do pacote completo)
+  const mensalidade = 7000; // recorrência ilustrativa
+
+  const leadsConvertidosAtuais = inputs.leadsMes * (inputs.taxaConversaoAtual / 100);
+  const receitaAtual = leadsConvertidosAtuais * inputs.ticketMedio;
+
+  const leadsConvertidosNovos = inputs.leadsMes * (inputs.taxaConversaoNova / 100);
+  const receitaNova = leadsConvertidosNovos * inputs.ticketMedio;
+
+  const receitaExtraMensal = receitaNova - receitaAtual;
+  const receitaExtraAnual = receitaExtraMensal * 12;
+  const custoPrimeiroAno = investimento + mensalidade * 12;
+  const roi = ((receitaExtraAnual - custoPrimeiroAno) / custoPrimeiroAno) * 100;
+
+  const formatCurrency = (value: number) =>
+    new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 }).format(value);
+
+  const handleChange = (key: keyof FaturamentoInputs, value: number) => {
+    setInputs((prev) => ({ ...prev, [key]: value }));
+  };
+
+  return (
+    <div className="h-full bg-slate-50 p-4 md:p-8 overflow-auto">
+      <span className="sr-only">Simulação para {preparedFor}</span>
+      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+        <div className="md:w-5/12 p-8 bg-slate-50 border-r border-slate-100">
+          <div className="mb-6">
+            <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
+              <Calculator className="h-5 w-5 text-prime" /> Parâmetros
+            </h3>
+            <p className="text-sm text-slate-500">Ajuste conforme volume real da {preparedFor}.</p>
+          </div>
+
+          <div className="space-y-5">
+            <div>
+              <label className="block text-xs font-bold text-slate-500 uppercase mb-2">Leads Mensais</label>
+              <input
+                type="number"
+                value={inputs.leadsMes}
+                onChange={(e) => handleChange("leadsMes", Number(e.target.value))}
+                className="w-full p-3 border border-slate-200 rounded-lg font-semibold text-slate-700 focus:border-prime focus:ring-1 focus:ring-prime outline-none"
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-bold text-slate-500 uppercase mb-2">Conversão Hoje (%)</label>
+                <input
+                  type="number"
+                  value={inputs.taxaConversaoAtual}
+                  onChange={(e) => handleChange("taxaConversaoAtual", Number(e.target.value))}
+                  className="w-full p-3 border border-slate-200 rounded-lg font-semibold text-slate-700 focus:border-prime focus:ring-1 focus:ring-prime outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-emerald-700 uppercase mb-2">Meta com IA (%)</label>
+                <input
+                  type="number"
+                  value={inputs.taxaConversaoNova}
+                  onChange={(e) => handleChange("taxaConversaoNova", Number(e.target.value))}
+                  className="w-full p-3 border border-emerald-200 bg-emerald-50 rounded-lg font-bold text-emerald-800 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-slate-500 uppercase mb-2">Ticket Médio (R$)</label>
+              <input
+                type="number"
+                value={inputs.ticketMedio}
+                onChange={(e) => handleChange("ticketMedio", Number(e.target.value))}
+                className="w-full p-3 border border-slate-200 rounded-lg font-semibold text-slate-700 focus:border-prime focus:ring-1 focus:ring-prime outline-none"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="md:w-7/12 p-8 flex flex-col justify-center bg-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-4 opacity-5">
+            <DollarSign size={120} />
+          </div>
+
+          <div className="relative z-10 space-y-8">
+            <div>
+              <div className="text-sm text-slate-500 font-medium uppercase tracking-wide">Potencial de Receita Adicional</div>
+              <div className="flex items-baseline gap-1 mt-1">
+                <span className="text-4xl md:text-5xl font-extrabold text-emerald-600">
+                  +{formatCurrency(receitaExtraMensal)}
+                </span>
+                <span className="text-slate-500 font-medium">/mês</span>
+              </div>
+              <p className="text-sm text-emerald-700 mt-2 font-medium bg-emerald-50 inline-block px-3 py-1 rounded-full border border-emerald-100">
+                <TrendingUp className="inline h-3 w-3 mr-1" />
+                {Math.round(leadsConvertidosNovos - leadsConvertidosAtuais)} agendamentos extras mensais
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6 border-t border-slate-100 pt-6">
+              <div>
+                <div className="text-xs text-slate-400 uppercase font-bold">Acumulado em 1 ano</div>
+                <div className="text-xl font-bold text-slate-800 mt-1">+{formatCurrency(receitaExtraAnual)}</div>
+              </div>
+              <div>
+                <div className="text-xs text-slate-400 uppercase font-bold">ROI do Projeto</div>
+                <div className="text-xl font-bold text-prime mt-1">{Math.round(roi)}%</div>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-lg p-4 text-xs text-slate-500 leading-relaxed">
+              * Cálculo considera Setup ({formatCurrency(investimento)}) + Mensalidade de 12 meses ({formatCurrency(mensalidade * 12)}).
+              Ajuste os parâmetros com os dados reais da {preparedFor} para validar a viabilidade.
+            </div>
+
+            <button className="w-full py-4 bg-prime hover:bg-prime-dark text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-prime/20">
+              Validar ROI com dados reais <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -1537,7 +1767,7 @@ function InsightsModalContent() {
     </div>
   );
 }
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function RelatoriosModalContent() {
   return (
     <div className="p-4 md:p-6 space-y-6 max-h-[70vh] overflow-auto">
